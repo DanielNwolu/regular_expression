@@ -28,6 +28,15 @@ A robust JavaScript module for validating credit card numbers and identifying ca
 - Traditional pattern: Starts with '51-55' followed by 14 digits
 - New 2-series pattern: Covers ranges 2221-2720 followed by 12 digits
 
+### Vervecard
+```javascript
+/^5[0-9]{15}(?:[0-9]{3})?$/
+```
+- Starts with '5' and is followed by exactly 16 digits.
+- Optionally includes 3 extra digits, allowing for 19-digit Verve cards.
+- Only allows numeric values and ensures the total length is either 17 or 19 digits.
+
+
 ## Usage
 
 ```javascript
